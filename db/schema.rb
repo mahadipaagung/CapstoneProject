@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_03_173018) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_03_174154) do
   create_table "admins", force: :cascade do |t|
     t.string "nama"
     t.string "email"
     t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "conversations", force: :cascade do |t|
+    t.integer "sender_id"
+    t.integer "recipient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
