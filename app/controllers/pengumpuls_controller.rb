@@ -46,6 +46,6 @@ class PengumpulsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pengumpul_params
-      params.require(:pengumpul).permit(:nama, :email, :password_digest)
+      params.require(:pengumpul).permit(:nama, :email, :password_digest, :password_confirmation)
     end
 end
