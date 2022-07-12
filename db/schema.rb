@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_11_102939) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_11_234022) do
   create_table "admins", force: :cascade do |t|
     t.string "nama"
     t.string "email"
@@ -32,6 +32,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_102939) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "informasi_edukasis", force: :cascade do |t|
+    t.string "judul"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "messages", force: :cascade do |t|
     t.text "body"
     t.integer "conversation_id"
@@ -49,13 +56,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_102939) do
     t.integer "waste_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "unit_price"
     t.index ["order_id"], name: "index_order_details_on_order_id"
     t.index ["waste_id"], name: "index_order_details_on_waste_id"
   end
 
   create_table "orders", force: :cascade do |t|
     t.text "deskripsi"
-    t.float "total"
+    t.float "total", default: 0.0
     t.integer "penyalur_id", null: false
     t.integer "pengumpul_id", null: false
     t.datetime "created_at", null: false

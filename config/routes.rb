@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'informasi_edukasis/index'
+  get 'informasi_edukasis/show'
+  get 'informasi_edukasis/create'
+  get 'informasi_edukasis/update'
+  get 'informasi_edukasis/destroy'
   get 'orders/index'
   get 'orders/show'
   get 'orders/create'
@@ -15,6 +20,7 @@ Rails.application.routes.draw do
   get 'categories/update'
   get 'categories/destroy'
 
+  resources :informasi_edukasis
   resources :categories
   resources :wastes
   resources :orders
