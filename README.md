@@ -3,10 +3,14 @@
 ## Installation
 Pastikan pada local machine telah terinstall ruby beserta ruby on rails, apabila telah terinstall dapat melakukan git clone seperti di bawah ini:
 
-git clone https://github.com/mahadipaagung/CapstoneProject
+>git clone https://github.com/mahadipaagung/CapstoneProject
 
-Setelah melakukan clone dari web github ke local machine, dapat melakukan command "bundle install" pada directory
-Setelah itu pada command line interface dapat menjalankan command "rake db:migrate" agar table database termigrasi pada directory local
+Setelah melakukan clone dari web github ke local machine, dapat melakukan command 
+>bundle install
+pada directory
+Setelah itu pada command line interface dapat menjalankan command 
+>rake db:migrate 
+agar table database termigrasi pada directory local
 
 ## Create Data User
 Untuk menambahkan data user dapat menggunakan format JSON berikut ini pada Postman:
