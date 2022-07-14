@@ -1,6 +1,6 @@
 # CapstoneProject
 
-# Installation
+## Installation
 Pastikan pada local machine telah terinstall ruby beserta ruby on rails, apabila telah terinstall dapat melakukan git clone seperti di bawah ini:
 
 git clone https://github.com/mahadipaagung/CapstoneProject
@@ -8,25 +8,19 @@ git clone https://github.com/mahadipaagung/CapstoneProject
 Setelah melakukan clone dari web github ke local machine, dapat melakukan command "bundle install" pada directory
 Setelah itu pada command line interface dapat menjalankan command "rake db:migrate" agar table database termigrasi pada directory local
 
-# Create Data User
+## Create Data User
 Untuk menambahkan data user dapat menggunakan format JSON berikut ini pada Postman:
-
-
-
+'''json
 {
   "nama" : "",
   "email" : "",
   "password_digest" : "",
   "password_confirmation" : ""
 }
-
-
-
+'''
 Format di atas adalah untuk 3 user pada program, user yang dimaksud yaitu Penyalur, Pengumpul, serta Admin.
 
 Kemudian akan mendapatkan response seperti di bawah ini apabila input/register data user berhasil:
-
-
 
 {
         "id": 1,
@@ -37,12 +31,9 @@ Kemudian akan mendapatkan response seperti di bawah ini apabila input/register d
         "updated_at": "2022-07-11T07:20:18.889Z"
     }
 
-
-
-# Orders
+## Orders
 Fitur Order adalah fitur yang berfungsi untuk User Penyalur menyalurkan sampahnya ke sistem, kemudian User Pengumpul akan dapat melihat data sampah yang terdaftar kemudian akan mengambilnya sesuai dengan daftar beserta harga sampah yang akan dibayar oleh Pengumpul ke Penyalur
 Untuk menambahkan data sampah pada order dapat menggunakan format JSON berikut ini pada Postman:
-
 
 {"order": {
 
@@ -57,9 +48,7 @@ Untuk menambahkan data sampah pada order dapat menggunakan format JSON berikut i
     ]
 }}
 
-
 Kemudian apabila input data berhasil akan menampilkan response seperti berikut ini:
-
 
 {
     "status": "true",
@@ -75,4 +64,3 @@ Kemudian apabila input data berhasil akan menampilkan response seperti berikut i
         "updated_at": "2022-07-11T23:58:37.892Z"
     }
 }
-
