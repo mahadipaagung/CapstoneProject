@@ -21,7 +21,7 @@ Untuk menambahkan data user dapat menggunakan format JSON berikut ini pada Postm
 Format di atas adalah untuk 3 user pada program, user yang dimaksud yaitu Penyalur, Pengumpul, serta Admin.
 
 Kemudian akan mendapatkan response seperti di bawah ini apabila input/register data user berhasil:
-
+```json
 {
         "id": 1,
         "nama": "abdi",
@@ -30,11 +30,11 @@ Kemudian akan mendapatkan response seperti di bawah ini apabila input/register d
         "created_at": "2022-07-11T07:20:18.889Z",
         "updated_at": "2022-07-11T07:20:18.889Z"
     }
-
+```
 ## Orders
 Fitur Order adalah fitur yang berfungsi untuk User Penyalur menyalurkan sampahnya ke sistem, kemudian User Pengumpul akan dapat melihat data sampah yang terdaftar kemudian akan mengambilnya sesuai dengan daftar beserta harga sampah yang akan dibayar oleh Pengumpul ke Penyalur
 Untuk menambahkan data sampah pada order dapat menggunakan format JSON berikut ini pada Postman:
-
+```json
 {"order": {
 
     "penyalur_id": 2,
@@ -47,9 +47,9 @@ Untuk menambahkan data sampah pada order dapat menggunakan format JSON berikut i
         }
     ]
 }}
-
+```
 Kemudian apabila input data berhasil akan menampilkan response seperti berikut ini:
-
+```json
 {
     "status": "true",
     "code": 200,
@@ -64,3 +64,4 @@ Kemudian apabila input data berhasil akan menampilkan response seperti berikut i
         "updated_at": "2022-07-11T23:58:37.892Z"
     }
 }
+```
