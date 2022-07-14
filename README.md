@@ -10,14 +10,14 @@ Setelah itu pada command line interface dapat menjalankan command "rake db:migra
 
 ## Create Data User
 Untuk menambahkan data user dapat menggunakan format JSON berikut ini pada Postman:
-'''json
+```json
 {
   "nama" : "",
   "email" : "",
   "password_digest" : "",
   "password_confirmation" : ""
 }
-'''
+```
 Format di atas adalah untuk 3 user pada program, user yang dimaksud yaitu Penyalur, Pengumpul, serta Admin.
 
 Kemudian akan mendapatkan response seperti di bawah ini apabila input/register data user berhasil:
