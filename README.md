@@ -11,6 +11,8 @@ Setelah itu pada command line interface dapat menjalankan command "rake db:migra
 # Create Data User
 Untuk menambahkan data user dapat menggunakan format JSON berikut ini pada Postman:
 
+
+
 {
   "nama" : "",
   "email" : "",
@@ -18,9 +20,13 @@ Untuk menambahkan data user dapat menggunakan format JSON berikut ini pada Postm
   "password_confirmation" : ""
 }
 
+
+
 Format di atas adalah untuk 3 user pada program, user yang dimaksud yaitu Penyalur, Pengumpul, serta Admin.
 
 Kemudian akan mendapatkan response seperti di bawah ini apabila input/register data user berhasil:
+
+
 
 {
         "id": 1,
@@ -31,9 +37,12 @@ Kemudian akan mendapatkan response seperti di bawah ini apabila input/register d
         "updated_at": "2022-07-11T07:20:18.889Z"
     }
 
+
+
 # Orders
 Fitur Order adalah fitur yang berfungsi untuk User Penyalur menyalurkan sampahnya ke sistem, kemudian User Pengumpul akan dapat melihat data sampah yang terdaftar kemudian akan mengambilnya sesuai dengan daftar beserta harga sampah yang akan dibayar oleh Pengumpul ke Penyalur
 Untuk menambahkan data sampah pada order dapat menggunakan format JSON berikut ini pada Postman:
+
 
 {"order": {
 
@@ -48,7 +57,9 @@ Untuk menambahkan data sampah pada order dapat menggunakan format JSON berikut i
     ]
 }}
 
+
 Kemudian apabila input data berhasil akan menampilkan response seperti berikut ini:
+
 
 {
     "status": "true",
@@ -64,3 +75,4 @@ Kemudian apabila input data berhasil akan menampilkan response seperti berikut i
         "updated_at": "2022-07-11T23:58:37.892Z"
     }
 }
+
